@@ -1,0 +1,15 @@
+[project]
+name = "legal-assistant"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "beautifulsoup4>=4.15.0",
+    "dotmd>=0.1.2",
+    "ollama>=0.6.2",
+    "playwright>=1.62.0",
+    "selenium>=4.49.0",
+    "trafilatura>=2.2.0",
+    "webdriver-manager>=4.1.2",
+]
