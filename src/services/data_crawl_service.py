@@ -2,7 +2,7 @@ from playwright.sync_api import sync_playwright
 from bs4 import BeautifulSoup
 import time
 
-url = "https://vbpl.vn/van-ban/chi-tiet/bo-luat-hinh-su-so-100-2015-qh13--96122"
+url = "https://vbpl.vn/van-ban/chi-tiet/bo-luat-to-tung-hinh-su-so-101-2015-qh13--96172"
 
 with sync_playwright() as p:
     # 1. Bỏ cờ headless tự động để tránh bị chặn
@@ -77,7 +77,7 @@ with sync_playwright() as p:
     browser.close()
 
 # 6. Kiểm tra và lưu kết quả
-output_path = "bo_luat_hinh_su_so.txt"
+output_path = "bo_luat_to_tung.txt"
 if len(extracted_text.strip()) > 500:
     with open(output_path, "w", encoding="utf-8") as f:
         f.write(extracted_text)
